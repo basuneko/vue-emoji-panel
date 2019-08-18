@@ -1,5 +1,11 @@
 # vue-emoji-panel
 
+## Project description
+
+Vue component that provides a filterable emoji list similar to that of Slack.
+
+![Vue Emoji Panel Screenshot](docs/vue-emoji-panel.png)
+
 ## Project setup
 ```
 yarn install
