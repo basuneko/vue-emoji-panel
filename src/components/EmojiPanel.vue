@@ -1,24 +1,24 @@
 <template>
   <div class="emoji-panel">
-      <div class="emoji-filter">
-        <input 
-          type="text" 
-          v-model="filter" 
-          class="emoji-filter__input" 
-          placeholder="Search..."
-        />
-      </div>
+    <div class="emoji-filter">
+      <input 
+        type="text" 
+        v-model="filter" 
+        class="emoji-filter__input" 
+        placeholder="Search..."
+      />
+    </div>
 
-      <div class="emoji-list">
-        <div 
-          v-for="emoji in filteredEmojis" 
-          :key="emoji.annotation"
-          class="emoji-list__item"
-          @click="$emit('emoji:select')">
-          {{ emoji.unicode }}
-        </div>
+    <div class="emoji-list">
+      <div 
+        v-for="emoji in filteredEmojis" 
+        :key="emoji.annotation"
+        class="emoji-list__item"
+        @click="$emit('emoji:select')">
+        {{ emoji.unicode }}
       </div>
     </div>
+  </div>
 </template>
 
 <script lang="ts">
