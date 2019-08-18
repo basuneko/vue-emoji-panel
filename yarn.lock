@@ -2866,6 +2866,26 @@ emoji-regex@^7.0.1:
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-7.0.3.tgz#933a04052860c85e83c122479c4748a8e4c72156"
   integrity sha512-CwBLREIQ7LvYFB0WyRvwhq5N5qPhc6PMjD6bYggFlI5YyDgl+0vxq5VHbMOFqLg7hfWzmu8T5Z1QofhmTIhItA==
 
+emoji.json@^12.1.0:
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/emoji.json/-/emoji.json-12.1.0.tgz#71710469103c6ad8b3d1bc55d75e1ea4e807b04f"
+  integrity sha512-/YZiFkMD0AfaaAMImFg/G2oNn0WfsuSTosv8oP4/vd1oB0ldGJAd4DfnPrzwVJ/701ce0e3u1JS87mFB/mxMEg==
+
+emojibase-data@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/emojibase-data/-/emojibase-data-4.0.1.tgz#7ff28250a9b753f058de313ac4654b37bbf7081b"
+  integrity sha512-U20Xg5TzdJ1pQnfJUT3rf9vqA9jL0GLALP8YsypyNdud2h5CWXUwpRRicRl8y0lOnABQbheLv3ohwt1+Mn8iTw==
+
+emojibase-regex@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/emojibase-regex/-/emojibase-regex-3.0.1.tgz#fb139d3d316c07d2d708a8c3f988a20b194dbbdf"
+  integrity sha512-oPFsltXRfTTkrs8CwfbDZwXlcWx8Gd/Bx7gOBF5D56NvuELznnS9s8t1I/RF1fZ7BwKDZg+jO+ZmLJ0iR82tTA==
+
+emojibase@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/emojibase/-/emojibase-3.0.1.tgz#12a1a58a456eb4aa618862464a009eb855a538a8"
+  integrity sha512-REya8m57xExC4iQxSMM2hS67o7QdHoMv8tGFTT+60uf2SU7vQdVn2bJYmv+rXLYtPefuildVtB8oBQuwzSpArQ==
+
 emojis-list@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-2.1.0.tgz#4daa4d9db00f9819880c79fa457ae5b09a1fd389"
@@ -4564,6 +4584,11 @@ lodash.memoize@^4.1.2:
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
   integrity sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
 
+lodash.toarray@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/lodash.toarray/-/lodash.toarray-4.4.0.tgz#24c4bfcd6b2fba38bfd0594db1179d8e9b656561"
+  integrity sha1-JMS/zWsvuji/0FlNsRedjptlZWE=
+
 lodash.transform@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.transform/-/lodash.transform-4.6.0.tgz#12306422f63324aed8483d3f38332b5f670547a0"
@@ -5008,6 +5033,13 @@ no-case@^2.2.0:
   integrity sha512-rmTZ9kz+f3rCvK2TD1Ue/oZlns7OGoIWP4fc3llxxRXlOkHKoWPPWJOfFYpITabSow43QJbRIoHQXtt10VldyQ==
   dependencies:
     lower-case "^1.1.1"
+
+node-emoji@^1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/node-emoji/-/node-emoji-1.10.0.tgz#8886abd25d9c7bb61802a658523d1f8d2a89b2da"
+  integrity sha512-Yt3384If5H6BYGVHiHwTL+99OzJKHhgp82S8/dktEK73T26BazdgZ4JZh92xSVtGNJvz9UbXdNAc5hcrXV42vw==
+  dependencies:
+    lodash.toarray "^4.4.0"
 
 node-forge@0.7.5:
   version "0.7.5"
