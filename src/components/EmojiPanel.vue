@@ -14,7 +14,7 @@
         v-for="emoji in filteredEmojis" 
         :key="emoji.annotation"
         class="emoji-list__item"
-        @click="$emit('emoji:select')">
+        @click="$emit('emoji:select', emoji.unicode)">
         {{ emoji.unicode }}
       </div>
     </div>
@@ -23,22 +23,22 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import { CompactEmoji, Shortcode } from 'emojibase'
+import { CompactEmoji, Shortcode } from 'emojibase';
 import emojiData from 'emojibase-data/en/compact.json';
 
 @Component
 export default class EmojiPanel extends Vue {
-  filter : string = ''
+  @Prop(String) readonly filter: string;
 
-  get filteredEmojis() : Array<CompactEmoji> {
+  get filteredEmojis(): CompactEmoji[] {
     if (this.filter === undefined || this.filter === '') {
       return emojiData;
     }
 
-    return emojiData.filter((dataPoint : CompactEmoji) => {
-      return dataPoint.shortcodes.some((shortcode : Shortcode) => {
+    return emojiData.filter((dataPoint: CompactEmoji) => {
+      return dataPoint.shortcodes.some((shortcode: Shortcode) => {
         return shortcode.startsWith(this.filter);
-      })
+      });
     });
   }
 }
@@ -49,7 +49,7 @@ export default class EmojiPanel extends Vue {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.35) 0px 1px 10px;
   border-radius: 6px;
   padding: 10px;
-  width: 400px;
+  background: #eaf2ef;
 }
 
 .emoji-filter__input {
